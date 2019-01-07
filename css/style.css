@@ -1,0 +1,10 @@
+.gauge-div {
+    display:block;
+    width:80%;
+    padding:50px 10%;
+    height:300px;
+}
+
+#gauge-environment {
+    width: 10%
+}

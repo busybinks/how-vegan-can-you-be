@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Bootstrap CSS (needs to go before all other CSS) -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Our custom CSS -->
+        <link rel="../css/style.css">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            <h1>How vegan can you be?</h1>
+
+            <p>Find out what impact you'd have on the environment, animal suffering, and your health by reducing your meat and dairy intake.</p>
+
+            <!-- Slider -->
+            <label for="days-slider">Vegan days per week</label>
+            <input type="range" id="days-slider" name="days-slider" min="0" max="7" value="0">
+
+            <!-- Speedometers -->
+            <div class="gauge-div">
+                <canvas id="gauge-environment" width="250" height="150"></canvas>
+            </div>
+
+            <!-- Dynamic paragraph summarising impact -->
+
+            <!-- Find out more button -->
+            
+        </div>
+
+
+        <!-- Other JavaScript libraries -->
+        <script src="http://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
+        
+        <!-- Bootstrap and JQuery imports -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <!-- Our JavaScript -->
+        <script src="../js/script.js"></script>
+
+    </body>
+</html>
