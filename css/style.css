@@ -1,10 +1,16 @@
-.gauge-div {
-    display:block;
-    width:80%;
-    padding:50px 10%;
-    height:300px;
+#slider-div {
+    text-align: center;
 }
 
-#gauge-environment {
-    width: 10%
+#num-days {
+    color: darkgreen;
+    font-weight: 800;
+}
+
+
+/* Make entire page content thinner */
+@media (min-width: 1200px) {
+    .container{
+        max-width: 800px;
+    }
 }

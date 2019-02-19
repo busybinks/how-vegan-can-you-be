@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Our custom CSS -->
-        <link rel="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,13 +20,24 @@
             <p>Find out what impact you'd have on the environment, animal suffering, and your health by reducing your meat and dairy intake.</p>
 
             <!-- Slider -->
-            <label for="days-slider">Vegan days per week</label>
-            <input type="range" id="days-slider" name="days-slider" min="0" max="7" value="0">
+            <div id="slider-div">
+                <h1 id="days-label" class="display-2"><span id="num-days">0</span> vegan days per week</h1>
+                <input type="range" id="days-slider" name="days-slider" min="0" max="7" value="0">
+            </div>
 
             <!-- Speedometers -->
             <div class="gauge-div">
-                <canvas id="gauge-environment" width="250" height="150"></canvas>
+                <canvas id="gauge-environment" class="gauge" width="250" height="150"></canvas>
             </div>
+        
+<!--
+            <div class="gauge-div">
+                <canvas id="gauge-suffering" class="gauge" width="250" height="150"></canvas>
+            </div>
+            <div class="gauge-div">
+                <canvas id="gauge-health" class="gauge" width="250" height="150"></canvas>
+            </div>
+-->
 
             <!-- Dynamic paragraph summarising impact -->
 

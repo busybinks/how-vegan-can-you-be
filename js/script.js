@@ -33,8 +33,17 @@ function create_gauges() {
     var gauge = new Gauge(canvas);
     gauge.setOptions(opts);
     
-    gauge.maxValue = 3000; // set max gauge value
-    gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+    gauge.maxValue = 7;
+    gauge.minValue = 0;
     gauge.animationSpeed = 32; // set animation speed (32 is default value)
-    gauge.set(1250); // set actual value
+    
+    
+    // just have the environment gauge reflect slider position for now
+    $('#days-slider')
+        .on('input change', function() {
+            var slider_val = $('#days-slider').val();
+            $('#num-days').html(slider_val);
+            gauge.set(slider_val);
+        })
+        .change();
 }
